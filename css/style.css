@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "RecoletaAlt";
+    src: url("../fonts/RecoletaAlt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RecoletaAlt-bold";
+    src: url("../fonts/RecoletaAlt-Bold.ttf");
+
+}
+
+*{
+    font-family: "RecoletaAlt", serif;
+}
+
+a:hover{
+    color: #4B00FF !important;
+}
+
+.hover-white:hover{
+    color: white !important;
+}
+
+.font-recoletaAlt-bold{
+    font-family: "RecoletaAlt-bold", serif;
+}
+
+.bg-nav{
+    background-color: #0C151A;
+}
+
+.text-color{
+    color: #4B00FF;
+}
+
+.border-color{
+    border-color: #4B00FF;
+}
+
+.bg-img{
+    background-image: url('../images/bg-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+.my-center{
+    margin: 20vh auto;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px black;
+}
