@@ -21,7 +21,7 @@ a:hover{
     color: white !important;
 }
 
-.font-recoletaAlt-bold{
+.font-recoletaAlt-bold, h2, h3{
     font-family: "RecoletaAlt-bold", serif;
 }
 
@@ -46,6 +46,15 @@ a:hover{
     border-color: #4B00FF !important;
 }
 
+.text-shadow{
+    text-shadow: 2px 2px 2px #4B00FF !important;
+}
+
+.skill-dimension{
+    width: 200px;
+    height: 100px;
+}
+
 .bg-img{
     background-image: url('../images/bg-img.svg');
     background-repeat: no-repeat;
@@ -57,7 +66,7 @@ a:hover{
     margin: 20vh auto;
 }
 
-.text-shadow{
+.text-shadow-black{
     text-shadow: 2px 2px black;
 }
 
@@ -65,12 +74,32 @@ a:hover{
     background-color: #0C151A;
 }
 
+.bg-skills{
+    background-color: #0B1317;
+}
+
 @media all and (max-width:900px) {
     .display-none{
         display: none !important;
     }
+
     .m-p-about{
         margin: 2rem 0 !important;
+    }
+
+    .d-block{
+        display: block !important;
+    }
+
+    .m-skill{
+        margin: auto 1rem !important;
+    }
+
+}
+
+@media all and (max-width:1200px) and (min-width:900px) {
+    .m-skill{
+        margin-right: 0 !important;
     }
 
 }
