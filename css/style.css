@@ -33,8 +33,17 @@ a:hover{
     color: #4B00FF;
 }
 
+.bg-div-picture{
+    background-color:  #4B00FF;
+    transform: rotate(0.4turn);
+}
+
+.picture-rotation{
+    transform: rotate(0.6turn);
+}
+
 .border-color{
-    border-color: #4B00FF;
+    border-color: #4B00FF !important;
 }
 
 .bg-img{
@@ -50,4 +59,18 @@ a:hover{
 
 .text-shadow{
     text-shadow: 2px 2px black;
+}
+
+.bg-about{
+    background-color: #0C151A;
+}
+
+@media all and (max-width:900px) {
+    .display-none{
+        display: none !important;
+    }
+    .m-p-about{
+        margin: 2rem 0 !important;
+    }
+
 }
