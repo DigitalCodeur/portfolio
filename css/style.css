@@ -50,6 +50,10 @@ a:hover{
     text-shadow: 2px 2px 2px #4B00FF !important;
 }
 
+.portfolio-shadow{
+    box-shadow: 2px 2px 2px #4B00FF !important;
+}
+
 .skill-dimension{
     width: 200px;
     height: 100px;
