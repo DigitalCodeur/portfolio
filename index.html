@@ -179,16 +179,16 @@
   <section class="bg-about">
     <div class="container py-5">
       <h2 class="text-center fs-1 py-5 text-color">PORTFOLIO</h2>
-      <div class="row row-cols-3 my-5">
-        <div class="col">
+      <div class="row flex-wrap  text-center my-5">
+        <div class="col my-2">
           <img src="./images/portfolio.svg" class="rounded-4 portfolio-shadow border-color border border-2"
             alt="portfolio" />
         </div>
-        <div class="col">
+        <div class="col my-2">
           <img src="./images/mercatus-africa.svg" class="rounded-4 portfolio-shadow border-color border border-2"
             alt="" />
         </div>
-        <div class="col">
+        <div class="col my-3">
           <img src="./images/portfolio.svg" class="rounded-4 portfolio-shadow border-color border border-2" alt="" />
         </div>
       </div>
@@ -196,6 +196,28 @@
   </section>
 
   <!-- Portfolio section end -->
+
+  <!-- Contact section start -->
+
+  <section class="bg-skills">
+    <div class="container py-5">
+      <h2 class="text-center fs-1 py-5 text-color">CONTACT</h2>
+      <form action="#" method="post" class="w-75 w-mobile mx-auto">
+        <input type="text" name="name" placeholder="Nom et Prénoms*"
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+        <input type="email" name="email" placeholder="Adresse Email*"
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+        <input type="text" name="object" placeholder="Objet*"
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+        <textarea name="message" class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input"
+          placeholder="Votre message*" cols="30" rows="10"></textarea>
+        <input type="submit" value="Envoyer"
+          class="btn fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color">
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact section end -->
 </body>
 
 </html>
