@@ -17,6 +17,12 @@ a:hover{
     color: #4B00FF !important;
 }
 
+.btn:hover{
+    color: white !important;
+    background-color: #4B00FF !important;
+    border-color: white !important;
+}
+
 .hover-white:hover{
     color: white !important;
 }
@@ -30,7 +36,7 @@ a:hover{
 }
 
 .text-color{
-    color: #4B00FF;
+    color: #4B00FF !important;
 }
 
 .bg-div-picture{
@@ -67,7 +73,7 @@ a:hover{
 }
 
 ::placeholder{
-    color: white !important;
+    color: rgba(255, 255, 255, 0.829) !important;
 }
 
 .skill-dimension{
@@ -83,7 +89,7 @@ a:hover{
 }
 
 .my-center{
-    margin: 20vh auto;
+    margin: 32vh auto;
 }
 
 .text-shadow-black{

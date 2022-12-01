@@ -21,14 +21,16 @@
   <!-- Hero start -->
 
   <header class="bg-img">
-    <nav class="navbar navbar-expand-lg bg-black bg-opacity-25 shadow">
+    <nav class="navbar navbar-expand-lg p-0 bg-black bg-opacity-50 shadow fixed-top">
       <div class="container">
         <a class="navbar-brand fs-1 text-color hover-white" href="./index.html">Scodeur
         </a>
-        <button class="navbar-toggler border-color" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -36,30 +38,30 @@
               <a class="nav-link fs-5 text-white mx-2" href="./index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#">Á propos</a>
+              <a class="nav-link fs-5 text-white mx-2" href="#about">Á propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#">Compétences</a>
+              <a class="nav-link fs-5 text-white mx-2" href="#skills">Compétences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#">Portfolio</a>
+              <a class="nav-link fs-5 text-white mx-2" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#">Contact</a>
+              <a class="nav-link fs-5 text-white mx-2" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" class="mx-2">
+              <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" target="_blank" class="mx-2">
                 <img src="./images/github.svg" class="mt-1" alt="logo github" />
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" title="voir le profil linkedin"
-                class="mx-2">
+              <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" target="_blank"
+                title="voir le profil linkedin" class="mx-2">
                 <img src="./images/linkedin.svg" class="mt-1" alt="logo linkedin" />
               </a>
             </li>
             <li class="nav-item">
-              <a href="mailto:lkoffisamuel@gmail.com" title="Envoyer un mail" class="mx-2">
+              <a href="mailto:lkoffisamuel@gmail.com" target="_blank" title="Envoyer un mail" class="mx-2">
                 <img src="./images/mail.svg" class="mt-1" alt="logo mail" />
               </a>
             </li>
@@ -68,12 +70,14 @@
       </div>
     </nav>
 
-    <div class="text-center p-5 my-center rounded-5">
-      <p class="text-white fs-4 text-shadow-black">Bonjour, je suis</p>
-      <h1 class="text-color display-2 text-shadow-black">
-        Koffi Samuel <span class="font-recoletaAlt-bold">LOUMON</span>
-      </h1>
-      <i class="text-white fs-4 text-shadow-black">Développeur web et web mobile</i>
+    <div class="text-center p-5 rounded-5">
+      <div class="my-center">
+        <p class="text-white fs-4 text-shadow-black">Bonjour, je suis</p>
+        <h1 class="text-color display-2 text-shadow-black">
+          Koffi Samuel <span class="font-recoletaAlt-bold">LOUMON</span>
+        </h1>
+        <i class="text-white fs-4 text-shadow-black">Développeur web et web mobile</i>
+      </div>
     </div>
   </header>
 
@@ -81,7 +85,7 @@
 
   <!-- About us section start -->
 
-  <section class="bg-about">
+  <section class="bg-about" id="about">
     <div class="container py-5">
       <h2 class="text-center fs-1 text-color">Á PROPOS</h2>
       <div class="d-flex">
@@ -96,15 +100,17 @@
             entrer en école d'informatique, j'ai décidé de me former en
             autodidacte. En décembre 2021, j'ai appris que l'OIF proposait des
             formations en développement web et web mobile en partenariat avec
-            <a href="http://" target="_blank">Simplon.co</a>  et <a href="http://" target="_blank">Energy Generation</a> dans le cadre du projet « D-CLIC,
-            formez-vous au numérique » . Je me suis inscrite à ce programme
-            qui m'a permis d'acquérir des compétences en développement web et
-            web mobile.
+            <a href="https://simplon.co/" target="_blank">Simplon.co</a> et
+            <a href="https://www.energy-generation.org/" target="_blank">Energy Generation</a>
+            dans le cadre du projet « D-CLIC, formez-vous au numérique » . Je
+            me suis inscrite à ce programme qui m'a permis d'acquérir des
+            compétences en développement web et web mobile.
           </p>
-          <button class="fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
+          <a href="./file/cv.pdf" target="_self" download="CV LOUMON Koffi Samuel"
+            class="btn fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
             Télécharger CV
             <img src="./images/telechargement.svg" class="p-2" alt="logo telechargement" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -114,7 +120,7 @@
 
   <!-- Skills section start -->
 
-  <section class="bg-skills">
+  <section class="bg-skills" id="skills">
     <div class="container py-5">
       <h2 class="text-center fs-1 my-5 text-color">COMPÉTENCES</h2>
       <div class="d-flex d-block">
@@ -176,10 +182,10 @@
 
   <!-- Portfolio section start -->
 
-  <section class="bg-about">
+  <section class="bg-about" id="portfolio">
     <div class="container py-5">
       <h2 class="text-center fs-1 py-5 text-color">PORTFOLIO</h2>
-      <div class="row flex-wrap  text-center my-5">
+      <div class="row flex-wrap text-center my-5">
         <div class="col my-2">
           <img src="./images/portfolio.svg" class="rounded-4 portfolio-shadow border-color border border-2"
             alt="image portfolio" />
@@ -189,7 +195,8 @@
             alt="image mercatus-africa" />
         </div>
         <div class="col my-3">
-          <img src="./images/portfolio.svg" class="rounded-4 portfolio-shadow border-color border border-2" alt=" image foodzem" />
+          <img src="./images/portfolio.svg" class="rounded-4 portfolio-shadow border-color border border-2"
+            alt=" image foodzem" />
         </div>
       </div>
     </div>
@@ -199,20 +206,20 @@
 
   <!-- Contact section start -->
 
-  <section class="bg-skills pb-5">
+  <section class="bg-skills pb-5" id="contact">
     <div class="container py-5">
       <h2 class="text-center fs-1 py-5 text-color">CONTACT</h2>
       <form action="#" method="post" class="w-75 w-mobile mx-auto">
         <input type="text" name="name" placeholder="Nom et Prénoms*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
         <input type="email" name="email" placeholder="Adresse Email*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
         <input type="text" name="object" placeholder="Objet*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input">
+          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
         <textarea name="message" class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input"
           placeholder="Votre message*" cols="30" rows="10"></textarea>
         <input type="submit" value="Envoyer"
-          class="btn fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color">
+          class="btn fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color" />
       </form>
     </div>
   </section>
@@ -223,19 +230,21 @@
   <footer class="bg-about">
     <div class="d-flex justify-content-between flex-wrap py-2 container">
       <div>
-        <p class="fs-5 text-white mb-2">Copyright &copy; 2022 Koffi Samuel LOUMON</p>
+        <p class="fs-5 text-white mb-2">
+          Copyright &copy; 2022 Koffi Samuel LOUMON
+        </p>
       </div>
       <div>
-            <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" class="mx-2 text-decoration-none">
-              <img src="./images/github.svg" class="mt-1" alt="logo github" />
-            </a>
-            <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" title="voir le profil linkedin"
-              class="mx-2 text-decoration-none">
-              <img src="./images/linkedin.svg" class="mt-1" alt="logo linkedin" />
-            </a>
-            <a href="mailto:lkoffisamuel@gmail.com" title="Envoyer un mail" class="mx-2 text-decoration-none">
-              <img src="./images/mail.svg" class="mt-1" alt="logo mail" />
-            </a>
+        <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" class="mx-2 text-decoration-none">
+          <img src="./images/github.svg" class="mt-1" alt="logo github" />
+        </a>
+        <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" title="voir le profil linkedin"
+          class="mx-2 text-decoration-none">
+          <img src="./images/linkedin.svg" class="mt-1" alt="logo linkedin" />
+        </a>
+        <a href="mailto:lkoffisamuel@gmail.com" title="Envoyer un mail" class="mx-2 text-decoration-none">
+          <img src="./images/mail.svg" class="mt-1" alt="logo mail" />
+        </a>
       </div>
     </div>
   </footer>
