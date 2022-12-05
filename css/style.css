@@ -85,6 +85,7 @@ a:hover{
     background-image: url('../images/bg-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .my-center{
@@ -99,7 +100,7 @@ a:hover{
     background-color: #0C151A;
 }
 
-.bg-skills{
+.bg-skills, body{
     background-color: #0B1317;
 }
 
@@ -137,4 +138,31 @@ a:hover{
         margin-right: 0 !important;
     }
 
+}
+
+
+/* Animation */
+
+
+[class*="reveal-"]{
+    opacity: 0 !important;
+    transform: translateY(200px);
+}
+
+.reveal-visible{
+    opacity: 1 !important;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+.reveal-1{
+    transition-delay: .1s;
+}
+
+.reveal-2{
+    transition-delay: .2s;
+}
+
+.reveal-3{
+    transition-delay: .3s;
 }

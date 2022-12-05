@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/style.css" />
 
   <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/app.js" type="module" defer></script>
 </head>
 
 <body>
@@ -72,11 +73,11 @@
 
     <div class="text-center p-5 rounded-5">
       <div class="my-center">
-        <p class="text-white fs-4 text-shadow-black">Bonjour, je suis</p>
-        <h1 class="text-color display-2 text-shadow-black">
+        <p class="text-white fs-4 text-shadow-black reveal-1">Bonjour, je suis</p>
+        <h1 class="text-color display-2 text-shadow-black reveal-2">
           Koffi Samuel <span class="font-recoletaAlt-bold">LOUMON</span>
         </h1>
-        <i class="text-white fs-4 text-shadow-black">Développeur web et web mobile</i>
+        <i class="text-white fs-4 text-shadow-black reveal-3">Développeur web et web mobile</i>
       </div>
     </div>
   </header>
@@ -87,15 +88,15 @@
 
   <section class="bg-about" id="about">
     <div class="container py-5">
-      <h2 class="text-center fs-1 text-color">Á PROPOS</h2>
+      <h2 class="text-center fs-1 text-color reveal-1">Á PROPOS</h2>
       <div class="d-flex">
-        <div class="display-none">
+        <div class="display-none reveal-2">
           <div class="bg-div-picture mt-5 rounded-5">
             <img src="./images/photo.webp" width="300" height="300" class="picture-rotation" alt="ma photo" />
           </div>
         </div>
         <div class="ms-5 m-p-about ps-2">
-          <p class="fs-5 text-white m-5 m-p-about text-justify">
+          <p class="fs-5 text-white m-5 m-p-about text-justify reveal-2">
             J'ai toujours été un passionné d'informatique. N'ayant pas pu
             entrer en école d'informatique, j'ai décidé de me former en
             autodidacte. En décembre 2021, j'ai appris que l'OIF proposait des
@@ -107,7 +108,7 @@
             compétences en développement web et web mobile.
           </p>
           <a href="./file/cv.pdf" target="_self" download="CV LOUMON Koffi Samuel"
-            class="btn fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
+            class="btn reveal-1 fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
             Télécharger CV
             <img src="./images/telechargement.webp" width="46" height="46" class="p-2" alt="logo telechargement" />
           </a>
@@ -122,11 +123,11 @@
 
   <section class="bg-skills" id="skills">
     <div class="container py-5">
-      <h2 class="text-center fs-1 my-5 text-color">COMPÉTENCES</h2>
+      <h2 class="text-center fs-1 my-5 text-color reveal-1">COMPÉTENCES</h2>
       <div class="d-flex d-block">
         <div class="me-5 m-skill">
-          <h3 class="text-white py-5 text-center">FRONT-END</h3>
-          <div class="d-flex justify-content-between">
+          <h3 class="text-white py-5 text-center reveal-1">FRONT-END</h3>
+          <div class="d-flex justify-content-between reveal-1">
             <div
               class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">HTML</p>
@@ -136,7 +137,7 @@
               <p class="pt-4">CSS</p>
             </div>
           </div>
-          <div class="my-5 pt-4 d-flex justify-content-between">
+          <div class="my-5 pt-4 d-flex justify-content-between reveal-2">
             <div class="text-white fs-3 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">JAVASCRIPT</p>
             </div>
@@ -148,8 +149,8 @@
         </div>
         <div class="ms-5 m-skill">
           <div>
-            <h3 class="text-white py-5 fw-bold text-center">BACK-END</h3>
-            <div class="d-flex justify-content-between">
+            <h3 class="text-white py-5 fw-bold text-center reveal-1">BACK-END</h3>
+            <div class="d-flex justify-content-between reveal-1">
               <div
                 class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">PHP</p>
@@ -161,8 +162,8 @@
             </div>
           </div>
           <div>
-            <h3 class="text-white py-3 fw-bold text-center">AUTRES</h3>
-            <div class="d-flex justify-content-between">
+            <h3 class="text-white py-3 fw-bold text-center reveal-2">AUTRES</h3>
+            <div class="d-flex justify-content-between reveal-2">
               <div
                 class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">GIT</p>
@@ -184,17 +185,17 @@
 
   <section class="bg-about" id="portfolio">
     <div class="container py-5">
-      <h2 class="text-center fs-1 py-5 text-color">PORTFOLIO</h2>
+      <h2 class="text-center fs-1 py-5 text-color reveal-1">PORTFOLIO</h2>
       <div class="row flex-wrap text-center my-5">
-        <div class="col my-2">
+        <div class="col my-2 reveal-1">
           <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
             alt="image portfolio" />
         </div>
-        <div class="col my-2">
+        <div class="col my-2 reveal-1">
           <img src="./images/mercatus-africa.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
             alt="image mercatus-africa" />
         </div>
-        <div class="col my-3">
+        <div class="col my-3 reveal-1">
           <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
             alt=" image foodzem" />
         </div>
@@ -208,18 +209,18 @@
 
   <section class="bg-skills pb-5" id="contact">
     <div class="container py-5">
-      <h2 class="text-center fs-1 py-5 text-color">CONTACT</h2>
+      <h2 class="text-center fs-1 py-5 text-color reveal-1">CONTACT</h2>
       <form action="./php/form.php" method="post" class="w-75 mx-auto w-mobile">
         <input type="text" name="name" placeholder="Nom et Prénoms*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
         <input type="email" name="email" placeholder="Adresse Email*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
         <input type="text" name="object" placeholder="Objet*"
-          class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
-        <textarea name="message" class="form-control fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input"
+          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+        <textarea name="message" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input"
           placeholder="Votre message*" cols="30" rows="10"></textarea>
         <input type="submit" value="Envoyer"
-          class="btn fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color" />
+          class="btn reveal-1 fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color" />
       </form>
     </div>
   </section>
@@ -230,11 +231,11 @@
   <footer class="bg-about">
     <div class="d-flex justify-content-between flex-wrap py-2 container">
       <div>
-        <p class="fs-5 text-white mb-2">
+        <p class="fs-5 text-white mb-2 reveal-1">
           Copyright &copy; 2022 Koffi Samuel LOUMON
         </p>
       </div>
-      <div>
+      <div class="reveal-1">
         <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" class="mx-2 text-decoration-none">
           <img src="./images/github.webp" width="32" height="32" class="mt-1" alt="logo github" />
         </a>
