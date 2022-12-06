@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Je suis LOUMON Koffi Samuel, developpeur web et web mobile.Je suis un passionné des nouvelles technologies.J'ai participer a une formation en développement web et web mobile organiser par l'OIF en partenariat avec Energy Generation et Simplon.co." />
+  <meta name="description" content="Je suis LOUMON Koffi Samuel, developpeur web et web mobile.Je suis un passionné des nouvelles technologies.J'ai participer a une formation en développement web et web mobile organiser par l'OIF en partenariat avec Energy Generation et Simplon.co." />
   <title>LOUMON Koffi Samuel developpeur web et web mobile</title>
   <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -19,7 +18,7 @@
 <body>
   <!-- Hero start -->
 
-  <header class="bg-img">
+  <header class="bg-img" id="home" data-spy>
     <nav class="navbar navbar-expand-lg p-0 bg-black bg-opacity-50 shadow fixed-top">
       <div class="container">
         <a class="navbar-brand fs-1 text-color hover-white" href="./index.html">Scodeur
@@ -34,39 +33,22 @@
           </svg>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="./index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#about">Á propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#skills">Compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-white mx-2" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" target="_blank" class="mx-2">
-                <img src="./images/github.webp" width="32" height="32" class="mt-1" alt="logo github" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" target="_blank"
-                title="voir le profil linkedin" class="mx-2">
-                <img src="./images/linkedin.webp" width="32" height="32" class="mt-1" alt="logo linkedin" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="mailto:lkoffisamuel@gmail.com" target="_blank" title="Envoyer un mail" class="mx-2">
-                <img src="./images/mail.webp" width="32" height="32" class="mt-1" alt="logo mail" />
-              </a>
-            </li>
-          </ul>
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link fs-5 text-white mx-2" href="#home">Accueil</a>
+            <a class="nav-link fs-5 text-white mx-2" href="#about">Á propos</a>
+            <a class="nav-link fs-5 text-white mx-2" href="#skills">Compétences</a>
+            <a class="nav-link fs-5 text-white mx-2" href="#portfolio">Portfolio</a>
+            <a class="nav-link fs-5 text-white mx-2" href="#contact">Contact</a>
+            <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" target="_blank" class="mx-2">
+              <img src="./images/github.webp" width="32" height="32" class="mt-1" alt="logo github" />
+            </a>
+            <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" target="_blank" title="voir le profil linkedin" class="mx-2">
+              <img src="./images/linkedin.webp" width="32" height="32" class="mt-1" alt="logo linkedin" />
+            </a>
+            <a href="mailto:lkoffisamuel@gmail.com" target="_blank" title="Envoyer un mail" class="mx-2">
+              <img src="./images/mail.webp" width="32" height="32" class="mt-1" alt="logo mail" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -86,7 +68,7 @@
 
   <!-- About us section start -->
 
-  <section class="bg-about" id="about">
+  <section class="bg-about" id="about" data-spy>
     <div class="container py-5">
       <h2 class="text-center fs-1 text-color reveal-1">Á PROPOS</h2>
       <div class="d-flex">
@@ -107,8 +89,7 @@
             me suis inscrite à ce programme qui m'a permis d'acquérir des
             compétences en développement web et web mobile.
           </p>
-          <a href="./file/cv.pdf" target="_self" download="CV LOUMON Koffi Samuel"
-            class="btn reveal-1 fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
+          <a href="./file/cv.pdf" target="_self" download="CV LOUMON Koffi Samuel" class="btn reveal-1 fs-4 border border-3 border-color bg-about text-white p-2 ms-5 m-p-about rounded-3">
             Télécharger CV
             <img src="./images/telechargement.webp" width="46" height="46" class="p-2" alt="logo telechargement" />
           </a>
@@ -121,19 +102,17 @@
 
   <!-- Skills section start -->
 
-  <section class="bg-skills" id="skills">
+  <section class="bg-skills" id="skills" data-spy>
     <div class="container py-5">
       <h2 class="text-center fs-1 my-5 text-color reveal-1">COMPÉTENCES</h2>
       <div class="d-flex d-block">
         <div class="me-5 m-skill">
           <h3 class="text-white py-5 text-center reveal-1">FRONT-END</h3>
           <div class="d-flex justify-content-between reveal-1">
-            <div
-              class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+            <div class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">HTML</p>
             </div>
-            <div
-              class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+            <div class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">CSS</p>
             </div>
           </div>
@@ -141,8 +120,7 @@
             <div class="text-white fs-3 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">JAVASCRIPT</p>
             </div>
-            <div
-              class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+            <div class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
               <p class="pt-4">BOOTSTRAP</p>
             </div>
           </div>
@@ -151,12 +129,10 @@
           <div>
             <h3 class="text-white py-5 fw-bold text-center reveal-1">BACK-END</h3>
             <div class="d-flex justify-content-between reveal-1">
-              <div
-                class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+              <div class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">PHP</p>
               </div>
-              <div
-                class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+              <div class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">LARAVEL</p>
               </div>
             </div>
@@ -164,12 +140,10 @@
           <div>
             <h3 class="text-white py-3 fw-bold text-center reveal-2">AUTRES</h3>
             <div class="d-flex justify-content-between reveal-2">
-              <div
-                class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+              <div class="text-white fs-3 me-5 m-skill text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">GIT</p>
               </div>
-              <div
-                class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
+              <div class="text-white fs-3 m-skill ms-5 text-center skill-dimension text-shadow border-color border border-3 rounded-3">
                 <p class="pt-4">FIGMA</p>
               </div>
             </div>
@@ -183,21 +157,20 @@
 
   <!-- Portfolio section start -->
 
-  <section class="bg-about" id="portfolio">
+  <section class="bg-about" id="portfolio" data-spy>
     <div class="container py-5">
       <h2 class="text-center fs-1 py-5 text-color reveal-1">PORTFOLIO</h2>
       <div class="row flex-wrap text-center my-5">
         <div class="col my-2 reveal-1">
-          <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
-            alt="image portfolio" />
+          <a href="./index.html">
+            <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2" alt="image portfolio" />
+          </a>
         </div>
         <div class="col my-2 reveal-1">
-          <img src="./images/mercatus-africa.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
-            alt="image mercatus-africa" />
+          <img src="./images/mercatus-africa.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2" alt="image mercatus-africa" />
         </div>
         <div class="col my-3 reveal-1">
-          <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2"
-            alt=" image foodzem" />
+          <img src="./images/portfolio.webp" width="354" height="254" class="rounded-4 portfolio-shadow border-color border border-2" alt=" image foodzem" />
         </div>
       </div>
     </div>
@@ -207,20 +180,15 @@
 
   <!-- Contact section start -->
 
-  <section class="bg-skills pb-5" id="contact">
+  <section class="bg-skills pb-5" id="contact" data-spy>
     <div class="container py-5">
       <h2 class="text-center fs-1 py-5 text-color reveal-1">CONTACT</h2>
       <form action="./php/form.php" method="post" class="w-75 mx-auto w-mobile">
-        <input type="text" name="name" placeholder="Nom et Prénoms*"
-          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
-        <input type="email" name="email" placeholder="Adresse Email*"
-          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
-        <input type="text" name="object" placeholder="Objet*"
-          class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
-        <textarea name="message" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input"
-          placeholder="Votre message*" cols="30" rows="10"></textarea>
-        <input type="submit" value="Envoyer"
-          class="btn reveal-1 fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color" />
+        <input type="text" name="name" placeholder="Nom et Prénoms*" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+        <input type="email" name="email" placeholder="Adresse Email*" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+        <input type="text" name="object" placeholder="Objet*" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" />
+        <textarea name="message" class="form-control reveal-1 fs-5 my-3 py-2 text-white rounded-3 border border-2 border-input" placeholder="Votre message*" cols="30" rows="10"></textarea>
+        <input type="submit" value="Envoyer" class="btn reveal-1 fs-3 text-white rounded-3 px-5 py-2 btn-shadow border border-3 border-color" />
       </form>
     </div>
   </section>
@@ -239,8 +207,7 @@
         <a href="https://github.com/LOUMON-Koffi-Samuel" title="Accéder au github" class="mx-2 text-decoration-none">
           <img src="./images/github.webp" width="32" height="32" class="mt-1" alt="logo github" />
         </a>
-        <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" title="voir le profil linkedin"
-          class="mx-2 text-decoration-none">
+        <a href="https://www.linkedin.com/in/koffi-samuel-loumon-5180a8233/" title="voir le profil linkedin" class="mx-2 text-decoration-none">
           <img src="./images/linkedin.webp" width="32" height="32" class="mt-1" alt="logo linkedin" />
         </a>
         <a href="mailto:lkoffisamuel@gmail.com" title="Envoyer un mail" class="mx-2 text-decoration-none">

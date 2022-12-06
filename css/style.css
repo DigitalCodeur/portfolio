@@ -39,6 +39,11 @@ a:hover{
     color: #4B00FF !important;
 }
 
+.active{
+    color: #4B00FF !important;
+    font-weight: bold !important;
+}
+
 .bg-div-picture{
     background-color:  #4B00FF;
     transform: rotate(0.4turn);
@@ -146,13 +151,13 @@ a:hover{
 
 [class*="reveal-"]{
     opacity: 0 !important;
-    transform: translateY(200px);
+    transform: translateY(100px);
 }
 
 .reveal-visible{
     opacity: 1 !important;
     transform: translateY(0);
-    transition: 1s;
+    transition: .7s;
 }
 
 .reveal-1{
