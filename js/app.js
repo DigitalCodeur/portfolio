@@ -1,4 +1,4 @@
-// scrolling appearance code start
+// ========== scrolling appearance code start ============
 
 const options = {
     root: null,
@@ -25,16 +25,15 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
     observer.observe(r)
 })
 
-// scrolling appearance code end
+// ========= scrolling appearance code end ===============
 
+//============== scroll spy code start =================
 
 const scrollSpyOptions = {
     root: null,
     rootMargin: '0px',
     threshold: .4
 }
-
-//scroll spy code start
 
 /**
  * @param {HTMLElement} elem
@@ -81,4 +80,37 @@ if (spies.length > 0) {
     })
 }
 
-//scroll spy code end
+// ================= scroll spy code end ============
+
+// ============= Ajax Form start ===============
+
+    const myForm = document.getElementById("myform");
+
+    myForm.addEventListener("submit", function (e) {
+        e.preventDefault();// Prevent page from reloading after submission
+
+        const xhttp = new XMLHttpRequest();
+        const data = new FormData(myForm);// Retrieve form data
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const object = document.getElementById("object").value;
+        const message = document.getElementById("message").value;
+
+        // We check if all the fields are filled
+
+        if (name && email && object && message) {
+            xhttp.onload = function () {
+                alert("Votre message a bien été envoyer avec succès !");
+            }
+            xhttp.open("POST", "./php/form.php"); // send to php without reloading the page
+            xhttp.send(data);
+            myForm.reset();
+        } else {
+            alert("Veillez remplir tous les champs");
+        }
+
+    });
+
+
+// ============= Ajax Form end ===============

@@ -101,6 +101,11 @@ a:hover{
     text-shadow: 2px 2px black;
 }
 
+.w-portfolio{
+    width: 20em;
+    height: 270px;
+}
+
 .bg-about{
     background-color: #0C151A;
 }

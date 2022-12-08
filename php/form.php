@@ -10,7 +10,7 @@ try {
         $database = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // set the PDO error mode to exception
         $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected successfully";
+        // echo "Connected successfully";
         return $database;
     }
 
@@ -26,26 +26,27 @@ try {
 
     function addContact()
     {
-        $name = $email = $object = $message = null;
-        if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['object']) && !empty($_POST['message'])) {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $object = $_POST['object'];
-            $message = $_POST['message'];
+        if ($_SERVER["REQUEST_METHOD"] === "POST"){
+            $name = $email = $object = $message = null;
+            if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['object']) && !empty($_POST['message'])) {
+                $name = htmlspecialchars($_POST['name']);
+                $email = htmlspecialchars($_POST['email']);
+                $object = htmlspecialchars($_POST['object']);
+                $message = htmlspecialchars($_POST['message']);
 
-            $success = createContact($name, $email, $object, $message);
-            if ($success) {
-                echo "envoi reussi";
+                $success = createContact($name, $email, $object, $message);
+                if ($success) {
+                    // echo "envoi reussi";
+                } else {
+                    throw new Exception('Echec d\'envoi.');
+                }
             } else {
-                throw new Exception('Echec d\'envoi.');
+                throw new Exception('veillez remplir tous les champ.');
             }
-        } else {
-            throw new Exception('veillez remplir tous les champ.');
         }
     }
 
     addContact();
-
 } catch (PDOException $e) {
 
     echo "error message: " . $e->getMessage();
