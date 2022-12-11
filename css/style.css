@@ -9,142 +9,145 @@
 
 }
 
-*{
+* {
     font-family: "RecoletaAlt", serif;
 }
 
-a:hover{
+a:hover {
     color: #4B00FF !important;
 }
 
-.btn:hover{
+.btn:hover {
     color: white !important;
     background-color: #4B00FF !important;
     border-color: white !important;
 }
 
-.hover-white:hover{
+.hover-white:hover {
     color: white !important;
 }
 
-.font-recoletaAlt-bold, h2, h3{
+.font-recoletaAlt-bold,
+h2,
+h3 {
     font-family: "RecoletaAlt-bold", serif;
 }
 
-.bg-nav{
+.bg-nav {
     background-color: #0C151A;
 }
 
-.text-color{
+.text-color {
     color: #4B00FF !important;
 }
 
-.active{
+.active {
     color: #4B00FF !important;
     font-weight: bold !important;
 }
 
-.bg-div-picture{
-    background-color:  #4B00FF;
+.bg-div-picture {
+    background-color: #4B00FF;
     transform: rotate(0.4turn);
 }
 
-.picture-rotation{
+.picture-rotation {
     transform: rotate(0.6turn);
 }
 
-.border-color{
+.border-color {
     border-color: #4B00FF !important;
 }
 
-.text-shadow{
+.text-shadow {
     text-shadow: 2px 2px 2px #4B00FF !important;
 }
 
-.portfolio-shadow{
+.portfolio-shadow {
     box-shadow: 2px 2px 2px #4B00FF !important;
 }
 
-.btn-shadow{
+.btn-shadow {
     box-shadow: 10px 10px 50px #00a6ff50 !important;
     margin: 1% 21.5vw !important;
 }
 
 
-.border-input{
+.border-input {
     border-color: #00000048 !important;
     background-color: #0C151A !important;
     box-shadow: 3px 3px 50px #0000002f !important;
 }
 
-::placeholder{
+::placeholder {
     color: rgba(255, 255, 255, 0.829) !important;
 }
 
-.skill-dimension{
+.skill-dimension {
     width: 200px;
     height: 100px;
 }
 
-.bg-img{
+.bg-img {
     background-image: url('../images/bg-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.my-center{
+.my-center {
     margin: 32vh auto;
 }
 
-.text-shadow-black{
+.text-shadow-black {
     text-shadow: 2px 2px black;
 }
 
-.w-portfolio{
+.w-portfolio {
     width: 20em;
     height: 270px;
 }
 
-.bg-about{
-    background-color: #0C151A;
+.bg-about {
+    background-color: #0C151A !important;
 }
 
-.bg-skills, body{
+.bg-skills,
+body {
     background-color: #0B1317;
 }
 
 @media all and (max-width:900px) {
-    .display-none{
+    .display-none {
         display: none !important;
     }
 
-    .m-p-about{
+    .m-p-about {
         margin: 2rem 0 !important;
     }
 
-    .d-block{
+    .d-block {
         display: block !important;
     }
 
-    .m-skill{
+    .m-skill {
         margin: auto 1rem !important;
     }
 
-    .w-mobile{
+    .w-mobile {
         width: 100% !important;
     }
 }
 
 @media all and (max-width:740px) {
-    .btn-shadow{
+    .btn-shadow {
         margin: 1% 20% !important;
-     }
+    }
 
 }
 
 @media all and (max-width:1200px) and (min-width:900px) {
-    .m-skill{
+    .m-skill {
         margin-right: 0 !important;
     }
 
@@ -154,25 +157,32 @@ a:hover{
 /* Animation */
 
 
-[class*="reveal-"]{
+[class*="reveal-"] {
     opacity: 0 !important;
     transform: translateY(100px);
 }
 
-.reveal-visible{
+.reveal-visible {
     opacity: 1 !important;
     transform: translateY(0);
     transition: .7s;
 }
 
-.reveal-1{
+.reveal-1 {
     transition-delay: .1s;
 }
 
-.reveal-2{
+.reveal-2 {
     transition-delay: .2s;
 }
 
-.reveal-3{
+.reveal-3 {
     transition-delay: .3s;
+}
+
+/* Another page */
+
+.w-img-page {
+    width: 15rem;
+    height: 230px;
 }
