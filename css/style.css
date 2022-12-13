@@ -186,3 +186,18 @@ body {
     width: 15rem;
     height: 230px;
 }
+
+/* success notification*/
+
+.success {
+    left: 30%;
+    opacity: 0 !important;
+    transform: translateY(-100px);
+    transition: .5s;
+}
+
+.success-show {
+    opacity: 1 !important;
+    transform: translateY(0);
+    transition: .5s;
+}
