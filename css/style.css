@@ -17,6 +17,10 @@ a:hover {
     color: #4B00FF !important;
 }
 
+.portfolio-opacity-1:hover {
+    opacity: 1 !important;
+}
+
 .btn:hover {
     color: white !important;
     background-color: #4B00FF !important;
@@ -41,8 +45,17 @@ h3 {
     color: #4B00FF !important;
 }
 
+.bg-color {
+    background-color: #4B00FF;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 .active {
     color: #4B00FF !important;
+    border-bottom: solid #4B00FF;
     font-weight: bold !important;
 }
 
@@ -75,7 +88,7 @@ h3 {
 
 .border-input {
     border-color: #00000048 !important;
-    background-color: #0C151A !important;
+    background-color: #001630 !important;
     box-shadow: 3px 3px 50px #0000002f !important;
 }
 
@@ -109,12 +122,12 @@ h3 {
 }
 
 .bg-about {
-    background-color: #0C151A !important;
+    background-color: #001125 !important;
 }
 
 .bg-skills,
 body {
-    background-color: #0B1317;
+    background-color: #000f22;
 }
 
 @media all and (max-width:900px) {
@@ -169,15 +182,15 @@ body {
 }
 
 .reveal-1 {
-    transition-delay: .1s;
-}
-
-.reveal-2 {
     transition-delay: .2s;
 }
 
-.reveal-3 {
+.reveal-2 {
     transition-delay: .3s;
+}
+
+.reveal-3 {
+    transition-delay: .4s;
 }
 
 /* Another page */
